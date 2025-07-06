@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Ibrahim Imam | Web Developer Portfolio{% endblock %}</title>
+    <meta name="description" content="Professional portfolio showcasing modern web development skills and projects">
+    
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/general.css' %}">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'css/queries.css' %}">
+    
+    <!-- Ionicons for icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header class="header" id="header">
+        <div class="logo">
+            <h1 class="logo-text">Ibrahim Imam</h1>
+        </div>
+        
+        <nav class="main-nav">
+            <ul class="main-nav-list">
+                <li><a class="main-nav-link" href="#home">Home</a></li>
+                <li><a class="main-nav-link" href="#about">About</a></li>
+                <li><a class="main-nav-link" href="#projects">Projects</a></li>
+                <li><a class="main-nav-link" href="#skills">Skills</a></li>
+                <li><a class="main-nav-link" href="#resume">Resume</a></li>
+                <li><a class="main-nav-link nav-cta" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Mobile Menu Button -->
+        <button class="btn-mobile-nav" aria-label="Toggle navigation">
+            <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+            <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+        </button>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="section-hero" id="home">
+            <div class="hero">
+                <div class="hero-text-box">
+                    <h1 class="heading-primary">Hi, I'm Ibrahim Imam</h1>
+                    <p class="hero-description">
+                        Aspiring Web Developer | Backend Enthusiast crafting modern and responsive web applications with clean code and beautiful designs.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn--full">View My Work</a>
+                        <a href="#contact" class="btn btn--outline">Get In Touch</a>
+                    </div>
+
+                    <div class="delivered-meals">
+                        <div class="delivered-imgs">
+                            <img src="{% static 'img/users/user-1.jpg' %}" alt="Happy client 1" />
+                            <img src="{% static 'img/users/user-2.jpg' %}" alt="Happy client 2" />
+                            <img src="{% static 'img/users/user-3.jpg' %}" alt="Happy client 3" />
+                            <img src="{% static 'img/users/user-4.jpg' %}" alt="Happy client 4" />
+                            <img src="{% static 'img/users/user-5.jpg' %}" alt="Happy client 5" />
+                        </div>
+                        <p class="delivered-text"><span>100+</span> happy clients</p>
+                    </div>
+                </div>
+                <div class="hero-img-box">
+                    <img src="{% static 'img/code/coding3.jpg' %}" alt="Developer workspace" class="hero-img" />
+                </div>
+            </div>
+        </section>
+
+        <!-- Social Media Links -->
+        <section class="section-featured">
+            <div class="container">
+                <h2 class="heading-featured-in">Connect with me</h2>
+                <div class="logos">
+                    <a href="#" aria-label="GitHub Profile">
+                        <img src="{% static 'img/logo/GitHub_Logo.png' %}" alt="GitHub" />
+                    </a>
+                    <a href="#" aria-label="Twitter Profile">
+                        <img src="{% static 'img/logo/X.png' %}" alt="Twitter" />
+                    </a>
+                    <a href="#" aria-label="LinkedIn Profile">
+                        <img src="{% static 'img/logo/Li.png' %}" alt="LinkedIn" />
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section-about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text-box">
+                        <span class="subheading">About Me</span>
+                        <h2 class="heading-secondary">My Journey in Web Development</h2>
+                        <p class="about-description">
+                            I am a dedicated individual with hands-on experience in IT and backend development, 
+                            currently building full-stack applications using Django and modern web technologies. 
+                            I love creating user-friendly applications that solve real-world problems.
+                        </p>
+                        <div class="about-features">
+                            <div class="about-feature">
+                                <ion-icon class="about-icon" name="code-outline"></ion-icon>
+                                <div>
+                                    <h3>Clean Code</h3>
+                                    <p>Writing maintainable and scalable code following best practices</p>
+                                </div>
+                            </div>
+                            <div class="about-feature">
+                                <ion-icon class="about-icon" name="bulb-outline"></ion-icon>
+                                <div>
+                                    <h3>Problem Solving</h3>
+                                    <p>Creative solutions to complex technical challenges</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-img-box">
+                        <img src="{% static 'img/code/developer.jpg' %}" alt="Developer at work" class="about-img" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="section-meals" id="projects">
+            <div class="container center-text">
+                <span class="subheading">Projects</span>
+                <h2 class="heading-secondary">Featured Projects & Applications</h2>
+            </div>
+            <div class="container grid grid--3--cols margin--bottom--md">
+                <div class="meal">
+                    <img src="{% static 'img/sites/littlelemon2.png' %}" class="meal-img" alt="Little Lemon Restaurant Website" />
+                    <div class="meal-content">
+                        <div class="meal-tags">
+                            <span class="tag tag--vegetarian">Django</span>
+                            <span class="tag tag--vegan">HTML/CSS</span>
+                        </div>
+                        <p class="meal-title">Little Lemon Restaurant</p>
+                        <ul class="meal-attributes">
+                            <li class="meal-attribute">
+                                <ion-icon class="meal-icon" name="code-outline"></ion-icon>
+                                <span>Full-stack web application</span>
+                            </li>
+                            <li class="meal-attribute">
+                                <ion-icon class="meal-icon" name="restaurant-outline"></ion-icon>
+                                <span>Restaurant booking system</span>
+                            </li>
+                            <li class="meal-attribute">
+                                <ion-icon class="meal-icon" name="star-outline"></ion-icon>
+                                <span>Responsive design</span>
+                            </li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="#" class="btn btn--outline btn--small">View Code</a>
+                            <a href="#" class="btn btn--full btn--small">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="meal">
+                    <img src="{% static 'img/sites/omnifood.png' %}" class="meal-img" alt="Omnifood Landing Page" />
+                    <div class="meal-content">
+                        <div class="meal-tags">
+                            <span class="tag tag--vegan">HTML/CSS</span>
+                            <span class="tag tag--paleo">JavaScript</span>
+                        </div>
+                        <p class="meal-title">Omnifood Landing Page</p>
+                        <ul class="meal-attributes">
+                            <li class="meal-attribute">
+                                <ion-icon class="meal-icon" name="desktop-outline"></ion-icon>
+                                <span>Modern landing page</span>
+                            </li>
+                            <li class="meal-attribute">
+                                <ion-icon class="meal-icon" name="phone-portrait-outline"></ion-icon>
+                                <span>Mobile-first design</span>
+                            </li>
+                            <li class="meal-attribute">
+                                <ion-icon class="meal-icon" name="flash-outline"></ion-icon>
+                                <span>Smooth animations</span>
+                            </li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="#" class="btn btn--outline btn--small">View Code</a>
+                            <a href="#" class="btn btn--full btn--small">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skills-showcase">
+                    <h3 class="heading-tertiary">Technical Skills</h3>
+                    <ul class="list">
+                        <li class="list-item">
+                            <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                            <span>HTML & CSS</span>
+                        </li>
+                        <li class="list-item">
+                            <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                            <span>JavaScript</span>
+                        </li>
+                        <li class="list-item">
+                            <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                            <span>Python & Django</span>
+                        </li>
+                        <li class="list-item">
+                            <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                            <span>Django REST Framework</span>
+                        </li>
+                        <li class="list-item">
+                            <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                            <span>Git & Version Control</span>
+                        </li>
+                        <li class="list-item">
+                            <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                            <span>Responsive Design</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container all-recipes">
+                <a href="#" class="link">See all projects &rarr;</a>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section-skills">
+            <div class="container">
+                <div class="skills-header center-text">
+                    <span class="subheading">Technical Skills</span>
+                    <h2 class="heading-secondary">Technologies I Work With</h2>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3 class="skill-category-title">Frontend</h3>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <span class="skill-name">HTML/CSS</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="90"></div>
+                                </div>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">JavaScript</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="75"></div>
+                                </div>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3 class="skill-category-title">Backend</h3>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <span class="skill-name">Python</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85"></div>
+                                </div>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Django</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="80"></div>
+                                </div>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3 class="skill-category-title">Tools</h3>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <span class="skill-name">Git</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85"></div>
+                                </div>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">MySQL</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="70"></div>
+                                </div>
+                                <span class="skill-percentage">70%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume Section -->
+        <section class="section-cta" id="resume">
+            <div class="container">
+                <div class="cta">
+                    <div class="cta-text-box">
+                        <h2 class="heading-secondary">Download My Resume</h2>
+                        <p class="cta-text">
+                            Get a detailed overview of my experience, skills, and projects. 
+                            Available in PDF format for easy viewing and printing.
+                        </p>
+                        <a href="{% url 'download_resume' %}" class="btn btn--form" download>
+                            <ion-icon name="download-outline"></ion-icon>
+                            Download Resume
+                        </a>
+                    </div>
+                    <div class="cta-img-box" role="img" aria-label="Resume preview"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section-contact">
+            <div class="container">
+                <div class="contact-header center-text">
+                    <span class="subheading">Get In Touch</span>
+                    <h2 class="heading-secondary">Let's Work Together</h2>
+                    <p class="contact-description">
+                        I'm always open to discussing new opportunities, interesting projects, 
+                        or just having a chat about technology.
+                    </p>
+                </div>
+                
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <ion-icon class="contact-icon" name="mail-outline"></ion-icon>
+                            <div>
+                                <h3>Email</h3>
+                                <p>ibrahim.imam@example.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <ion-icon class="contact-icon" name="call-outline"></ion-icon>
+                            <div>
+                                <h3>Phone</h3>
+                                <p>+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <ion-icon class="contact-icon" name="location-outline"></ion-icon>
+                            <div>
+                                <h3>Location</h3>
+                                <p>Your City, State</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <form id="contact-form" class="contact-form" method="post" action="{% url 'contact' %}">
+                        {% csrf_token %}
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--form">
+                            <ion-icon name="send-outline"></ion-icon>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Ibrahim Imam</h3>
+                    <p>Passionate web developer creating modern, responsive, and user-friendly applications.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="GitHub"><ion-icon name="logo-github"></ion-icon></a>
+                        <a href="#" aria-label="LinkedIn"><ion-icon name="logo-linkedin"></ion-icon></a>
+                        <a href="#" aria-label="Twitter"><ion-icon name="logo-twitter"></ion-icon></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Ibrahim Imam. Made with <ion-icon name="heart"></ion-icon> and Django.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>
