@@ -9,16 +9,10 @@ export default {
       animation: {
         "fade-in-up": "fade-in-up 0.8s ease-out",
       },
-    },
-  },
-  plugins: [],
-};
-module.exports = {
-  theme: {
-    extend: {
       colors: {
-        primary: "#1e293b", // your custom color
+        primary: "#3b82f6", // your custom color
       },
     },
   },
+  plugins: [],
 };
