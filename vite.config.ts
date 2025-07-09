@@ -6,5 +6,5 @@ export default defineConfig({
   optimizeDeps: {
     exclude: ['lucide-react'],
   },
-  base: './', // 👈 This fixes broken styles on Netlify
+  base: '/', // ✅ Use this for Netlify root domain
 });
