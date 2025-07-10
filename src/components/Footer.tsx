@@ -62,7 +62,7 @@ const Footer = () => {
               <a href="https://www.linkedin.com/in/ibrahim-imam-64b512a8/" className="text-gray-400 hover:text-white transition-colors duration-200">
                 <Linkedin size={24} />
               </a>
-              <a href="imamkhaleel2@gmail.com" className="text-gray-400 hover:text-white transition-colors duration-200">
+              <a href="mailto:imamkhaleel2@gmail.com" className="text-gray-400 hover:text-white transition-colors duration-200">
                 <Mail size={24} />
               </a>
             </div>
