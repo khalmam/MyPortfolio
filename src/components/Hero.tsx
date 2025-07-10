@@ -15,7 +15,7 @@ const Hero = () => {
         <div className="animate-fade-in-up">
           <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-gray-900 mb-6">
             Hi, I'm{' '}
-            <span className="text-blue-600">Your Name</span>
+            <span className="text-blue-600">Ibrahim Imam</span>
           </h1>
           <p className="text-xl sm:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto">
             A passionate web developer crafting modern and responsive web applications with clean code and beautiful designs.
