@@ -1,34 +1,44 @@
 import React from 'react';
 import { ExternalLink, Github } from 'lucide-react';
+import LittleLemonImage from "../assets/images/littlelemon.png"; // Adjust the path as necessary
+import OmnifoodImage from "../assets/images/omnifood.png"; // Adjust the path as necessary
+import MyportfolioImage from "../assets/images/myportfolio.png"; // Adjust the path as necessary
 
 const Projects = () => {
   const projects = [
     {
-      title: 'E-Commerce Platform',
-      description: 'Full-stack e-commerce application built with Django and React, featuring user authentication, product management, and payment integration.',
-      image: 'https://images.pexels.com/photos/4050302/pexels-photo-4050302.jpeg?auto=compress&cs=tinysrgb&w=800',
-      technologies: ['Django', 'React', 'PostgreSQL', 'Stripe'],
-      github: '#',
-      live: '#'
+      title: "Little Lemon - Restaurant Website",
+      description:
+        "Designed and built RESTful APIs for a restaurant platform using Django and MySQL, enabling menu management and table reservations with secure user authentication.",
+      // image: 'https://images.pexels.com/photos/4050302/pexels-photo-4050302.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: LittleLemonImage,
+      technologies: ["Django", "JavaScript", "MySQL", "Stripe"],
+      github: "#",
+      live: "#",
     },
     {
-      title: 'Task Management App',
-      description: 'Collaborative task management application with real-time updates, user roles, and project organization features.',
-      image: 'https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg?auto=compress&cs=tinysrgb&w=800',
-      technologies: ['Django REST', 'React', 'WebSocket', 'Redis'],
-      github: '#',
-      live: '#'
+      title: "Omnifood - Food Delivery App",
+      description:
+        "Created a fully responsive frontend website for a food delivery service, focusing on user experience and clean design with HTML, CSS, and JavaScript.",
+      // image:
+      //   "https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: OmnifoodImage,
+      technologies: ["Django REST", "React", "WebSocket", "Redis"],
+      github: "#",
+      live: "https://omnifoodimam.netlify.app",
     },
     {
-      title: 'Portfolio Website',
-      description: 'Responsive portfolio website showcasing modern design principles and smooth animations.',
-      image: 'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800',
-      technologies: ['React', 'Tailwind CSS', 'Framer Motion'],
-      github: '#',
-      live: '#'
-    }
+      title: "Portfolio Website",
+      description:
+        "Responsive portfolio website showcasing modern design principles and smooth animations.",
+      // image:
+      //   "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: MyportfolioImage,
+      technologies: ["React", "Tailwind CSS", "Framer Motion"],
+      github: "#",
+      live: "#",
+    },
   ];
-
   return (
     <section id="projects" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
