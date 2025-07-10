@@ -77,15 +77,19 @@ const Projects = () => {
                 </div>
                 
                 <div className="flex space-x-4">
-                  <a 
+                      <a
                     href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="flex items-center text-gray-700 hover:text-blue-600 transition-colors duration-200"
                   >
                     <Github size={18} className="mr-2" />
                     Code
                   </a>
-                  <a 
+                  <a
                     href={project.live}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="flex items-center text-gray-700 hover:text-blue-600 transition-colors duration-200"
                   >
                     <ExternalLink size={18} className="mr-2" />
