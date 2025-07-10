@@ -56,13 +56,13 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Connect</h4>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-white transition-colors duration-200">
+              <a href="github.com/khalmam" className="text-gray-400 hover:text-white transition-colors duration-200">
                 <Github size={24} />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors duration-200">
+              <a href="https://www.linkedin.com/in/ibrahim-imam-64b512a8/" className="text-gray-400 hover:text-white transition-colors duration-200">
                 <Linkedin size={24} />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors duration-200">
+              <a href="imamkhaleel2@gmail.com" className="text-gray-400 hover:text-white transition-colors duration-200">
                 <Mail size={24} />
               </a>
             </div>
@@ -71,7 +71,7 @@ const Footer = () => {
         
         <div className="border-t border-gray-800 mt-8 pt-8 text-center">
           <p className="text-gray-400 flex items-center justify-center">
-            Made with <Heart className="w-4 h-4 mx-1 text-red-500" /> by Your Name © {currentYear}
+            Made with <Heart className="w-4 h-4 mx-1 text-red-500" /> by Ibrahim Imam © {currentYear}
           </p>
         </div>
       </div>
